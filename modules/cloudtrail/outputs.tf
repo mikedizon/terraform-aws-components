@@ -32,3 +32,8 @@ output "cloudtrail_logs_role_name" {
   value       = aws_iam_role.cloudtrail_cloudwatch_logs.name
   description = "CloudTrail Logs role name"
 }
+
+output "cloudtrail_kms_key" {
+  value       = module.kms_key_cloudtrail.key_arn
+  description = "CloudTrail KMS key ARN"
+}
