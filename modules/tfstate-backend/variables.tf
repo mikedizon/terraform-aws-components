@@ -20,3 +20,9 @@ variable "enable_server_side_encryption" {
   default     = true
   description = "Enable DynamoDB and S3 server-side encryption"
 }
+
+variable "arn_format" {
+  type        = string
+  default     = "arn:aws"
+  description = "ARN format to be used. May be changed to support deployment in GovCloud/China regions."
+}
