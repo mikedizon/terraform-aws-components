@@ -7,4 +7,4 @@ module "tfstate_backend" {
   enable_server_side_encryption = var.enable_server_side_encryption
 
   context = module.this.context
-}
+} 
