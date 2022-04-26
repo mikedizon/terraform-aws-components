@@ -13,7 +13,6 @@ module "iam_roles" {
   source     = "../account-map/modules/iam-roles"
   privileged = true
   context    = module.this.context
-  arn_format = var.arn_format
 }
 
 variable "import_role_arn" {
