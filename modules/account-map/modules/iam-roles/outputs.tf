@@ -8,7 +8,7 @@ output "terraform_profile_name" {
 
 output "org_role_arn" {
   value = local.account_name == module.account_map.outputs.root_account_account_name ? null : format(
-    "${var.arn_format}:iam::%s:role/OrganizationAccountAccessRole",
+    "arn:aws:iam::%s:role/OrganizationAccountAccessRole",
     module.account_map.outputs.full_account_map[local.account_name]
   )
 }
